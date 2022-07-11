@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trions-les tous !</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Trions-les tous !</h1>
+
+        <div class="form">
+
+            <label for="categorie-dechet" class="form-label mb-3">Choisissez la catégorie de déchet : </label><br>
+
+            <div class="row">
+                <div class="mb-3 col-12 col-md-5 col-sm-12">
+                    <input type="text" class="form-control" name="q" id="q" placeholder="Mots clefs">
+                </div>
+
+                <div class="mb-3 col-12 col-md-6">
+                    <select name="categorie-dechet" id="categorie-dechet" class="form-select">
+                    </select>
+                </div>
+                <div class="mb-3 col-12 col-sm-12 col-md-1">
+                    <button id="btnValid" class="btn btn-secondary">Valider</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="recyparc-container row text-center mb-3">
+            <img src="img/recyparc.png" alt="alt" class="recyparc-img col-12 col-md-2 mx-auto mb-5">
+            <div class="col-12 col-md-10 recyparc-info order-sm-last order-first mb-5">
+                <div id="recyparc-infoparc"></div>
+                <div id="recyparc-infocollecte"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Imports des scripts -->
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/dom.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
